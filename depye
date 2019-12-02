@@ -3,6 +3,7 @@ rm -f gthermo_open.py gthermo_open.pyc
 ctmax=1000;ctstep=1;cstruc='POSCAR';show='T';s=0.617;ev='e-v.dat';expt='expt';nat=0
 cprop="'all'"
 eos='vinet'
+
 for i in "$@"; do
     if echo $i|grep "tmax">/dev/null; then
      ctmax=`echo $i|grep -o '[0-9].*'`
