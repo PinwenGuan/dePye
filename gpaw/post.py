@@ -1,6 +1,7 @@
 import numpy as np
 import os
 
+
 def vol(ftraj='atoms.traj'):
     from ase.io import read
     a=read(ftraj,':')
