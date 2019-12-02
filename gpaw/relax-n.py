@@ -9,6 +9,7 @@ from ase.parallel import parprint
 from ase.io import read,Trajectory
 from ase.io import write
 
+
 atoms = read('POSCAR')
 sym = atoms.get_chemical_symbols()
 
