@@ -1,6 +1,6 @@
 import numpy as np
 
-"""read QE or VASP structures to generate the basis vectors and atomic positions"""
+"""read QE or VASP structures to generate the basis vectors and the atomic positions"""
 
 def readst(fname):
 	f=open(fname)
