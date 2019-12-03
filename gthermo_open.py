@@ -93,6 +93,7 @@ def trim_ve(v,e):
         "vinet": Vinet,
         "deltafactor": DeltaFactor,
         "numerical_eos": NumericalEOS         """
+
 #VEB0_PYMATGEN
 def VEB0(v,e,eos='vinet'):
     Eos = EOS(eos_name=eos)
