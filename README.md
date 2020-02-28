@@ -77,12 +77,16 @@ Note: the default name of the experimental file is expt. If you want to use anot
 Note: for VASP, the structure file should be named “POSCAR”. For QE, it should be ended with “.in”. The expt file should look like:<br>
 ```
 # T (K) G (kJ/mol) V (cm^3/mol) B (GPa) S (J/mol/K) H (kJ/mol) TEC (1e-6/K) Cp (J/mol/K) Cv (J/mol/K)
-T B
-298 100
-500  90
+T B ref
+298 100 1
+298 95 2 
+500  90 2
 
-T TEC
-298 40
+T TEC ref
+298 40 3
+
+#You can name the references for literature data shown in the figures by alias below. The names are in the order as 1,2,3
+#alias: author A, author B, author C
 ```
 
 ## Get the results
