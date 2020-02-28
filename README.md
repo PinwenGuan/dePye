@@ -92,3 +92,9 @@ T TEC ref
 ## Get the results
 
 After dePye running, a series of figures about EOS and thermodynamic properties will be prompted out.  The output file “Debye-thermo” contains the EOS parameters and the data of Gibbs energy, volume, bulk modulus, entropy, enthalpy, thermal expansion and heat capacity as functions of temperature, which can be further as inputs for thermodynamic modelling.<br> 
+
+## Install dePye
+
+Please cite the reference below if you use dePye in your work:<br>
+
+Pin-Wen Guan, Gregory Houchins, Venkatasubramanian Viswanathan. Uncertainty quantification of DFT-predicted finite temperature thermodynamic properties within the Debye model. The Journal of Chemical Physics, 2019, 151(24): 244702.<br>
