@@ -1,12 +1,12 @@
 # dePye
 A python code for EOS fitting and calculations of thermodynamics properties based on the Debye model with DFT uncertainty quantification functions.
 
-##1.	Install dePye
+1.	Install dePye
 ---
-Suppose you download the files and put them in the folder ~/bin. Then add the related paths by adding in your .bashrc:
-export PATH=~/bin/depye:$PATH
-export PYTHONPATH=~/bin/depye:$PYTHONPATH
-The EOS fitting is dependent on pymatgen, which should be installed first.
+Suppose you download the files and put them in the folder ~/bin. Then add the related paths by adding in your .bashrc:<br>
+export PATH=~/bin/depye:$PATH<br>
+export PYTHONPATH=~/bin/depye:$PYTHONPATH<br>
+The EOS fitting is dependent on pymatgen, which should be installed first.<br>
 2.	Prepare the input files
 ---
 Since you have finished the energy calculations, you should already have the structure file in your working folder (if not you need to do so). Currently dePye supports the structure files of VASP and Quantum ESPRESSO (QE), i.e., POSCAR and the .in file. 
