@@ -8,6 +8,7 @@ export PATH=~/bin/depye:$PATH
 export PYTHONPATH=~/bin/depye:$PYTHONPATH
 The EOS fitting is dependent on pymatgen, which should be installed first.
 2.	Prepare the input files
+---
 Since you have finished the energy calculations, you should already have the structure file in your working folder (if not you need to do so). Currently dePye supports the structure files of VASP and Quantum ESPRESSO (QE), i.e., POSCAR and the .in file. 
 Normally, the only input file you need to prepare is e-v.dat (can be a name ended with .dat) such as:
 # V(angstrom^3) E(eV) vol_0.98 vol_0.99 vol_1.00 vol_1.01 vol_1.02
@@ -19,7 +20,8 @@ Normally, the only input file you need to prepare is e-v.dat (can be a name ende
 77.726434   -7728.08681822   -7728.05316957   …
 The comment lines do not matter. The first column is the volume (in angstrom^3), and the second, third, … is the energies (in eV). At least 5 V-E data points are needed. In the case of multiple sets of energies, each energy set will generate a result. For example, one can get two E-V datasets with and without relaxation, and get two sets of properties.
 Note: the input data should be corresponded to the number of atoms in the structure file. 
-3.	Run dePye:
+3.	Run dePye
+---
 First activate the virtual environment where pymatgen is installed:
 source activate (pymatgen environment)
 In your working folder, type:
@@ -55,4 +57,5 @@ T B
 T TEC
 298 40
 4.	Get the results
+---
 After dePye running, a series of figures about EOS and thermodynamic properties will be prompted out.  The output file “Debye-thermo” contains the EOS parameters and the data of Gibbs energy, volume, bulk modulus, entropy, enthalpy, thermal expansion and heat capacity as functions of temperature, which can be further as inputs for thermodynamic modelling. 
