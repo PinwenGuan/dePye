@@ -28,7 +28,9 @@ Note: the input data should be corresponded to the number of atoms in the struct
 ## Run dePye
 
 First activate the virtual environment where pymatgen is installed:<br>
-source activate (pymatgen environment)<br>
+```
+source activate (pymatgen environment)
+```
 In your working folder, type:<br>
 ```
 depye -tmax=1000 –tstep=10 POSCAR
@@ -67,7 +69,9 @@ G V B S H TEC Cp Cv Bp<br>
 0 1 2 3 4  5  6  7  8<br>
 
 You can append experimental data (or data you get by other methods, e.g., phonon method):<br>
-depye POSCAR data.expt<br>
+```
+depye POSCAR data.expt
+```
 Note: the default name of the experimental file is expt. If you want to use another name, the file should end with .expt.<br> 
 Note: for VASP, the structure file should be named “POSCAR”. For QE, it should be ended with “.in”. The expt file should look like:<br>
 \# T (K) G (kJ/mol-atom) V (cm^3/mol-atom) B (GPa) S (J/mol-atom/K) H (kJ/mol-atom) TEC (1e-6/K) Cp (J/mol-atom/K) Cv (J/mol-atom/K)<br>
