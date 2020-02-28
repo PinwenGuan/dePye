@@ -2,6 +2,7 @@
 A python code for EOS fitting and calculations of thermodynamics properties based on the Debye model with DFT uncertainty quantification functions.
 
 1.	Install dePye
+---
 Suppose you download the files and put them in the folder ~/bin. Then add the related paths by adding in your .bashrc:
 export PATH=~/bin/depye:$PATH
 export PYTHONPATH=~/bin/depye:$PYTHONPATH
