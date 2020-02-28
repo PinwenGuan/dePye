@@ -76,7 +76,7 @@ depye POSCAR data.expt
 Note: the default name of the experimental file is expt. If you want to use another name, the file should end with .expt.<br> 
 Note: for VASP, the structure file should be named “POSCAR”. For QE, it should be ended with “.in”. The expt file should look like:<br>
 ```
-# T (K) G (kJ/mol-atom) V (cm^3/mol-atom) B (GPa) S (J/mol-atom/K) H (kJ/mol-atom) TEC (1e-6/K) Cp (J/mol-atom/K) Cv (J/mol-atom/K)
+# T (K) G (kJ/mol) V (cm^3/mol) B (GPa) S (J/mol/K) H (kJ/mol) TEC (1e-6/K) Cp (J/mol/K) Cv (J/mol/K)
 T B
 298 100
 500  90
