@@ -93,7 +93,7 @@ T TEC ref
 
 After dePye running, a series of figures about EOS and thermodynamic properties will be prompted out.  The output file “Debye-thermo” contains the EOS parameters and the data of Gibbs energy, volume, bulk modulus, entropy, enthalpy, thermal expansion and heat capacity as functions of temperature, which can be further as inputs for thermodynamic modelling.<br> 
 
-## Install dePye
+## Reference
 
 Please cite the reference below if you use dePye in your work:<br>
 
