@@ -8,11 +8,11 @@ export PATH=\~/bin/depye:$PATH<br>
 export PYTHONPATH=\~/bin/depye:$PYTHONPATH<br>
 The EOS fitting is dependent on pymatgen, which should be installed first.<br>
 
-2.	Prepare the input files
----
+## Prepare the input files
+
 Since you have finished the energy calculations, you should already have the structure file in your working folder (if not you need to do so). Currently dePye supports the structure files of VASP and Quantum ESPRESSO (QE), i.e., POSCAR and the .in file. 
 Normally, the only input file you need to prepare is e-v.dat (can be a name ended with .dat) such as:
-# V(angstrom^3) E(eV) vol_0.98 vol_0.99 vol_1.00 vol_1.01 vol_1.02
+\# V(angstrom^3) E(eV) vol_0.98 vol_0.99 vol_1.00 vol_1.01 vol_1.02
 
 69.131955   -7728.27656469   -7728.27686878   …
 71.217852   -7728.28518104   -7728.29116264   …
@@ -50,7 +50,7 @@ You can append experimental data (or data you get by other methods, e.g., phonon
 depye POSCAR data.expt
 Note: the default name of the experimental file is expt. If you want to use another name, the file should end with .expt. 
 Note: for VASP, the structure file should be named “POSCAR”. For QE, it should be ended with “.in”. The expt file should look like:
-# T (K) G (kJ/mol-atom) V (cm^3/mol-atom) B (GPa) S (J/mol-atom/K) H (kJ/mol-atom) TEC (1e-6/K) Cp (J/mol-atom/K) Cv (J/mol-atom/K)
+\# T (K) G (kJ/mol-atom) V (cm^3/mol-atom) B (GPa) S (J/mol-atom/K) H (kJ/mol-atom) TEC (1e-6/K) Cp (J/mol-atom/K) Cv (J/mol-atom/K)
 T B
 298 100
 500  90
