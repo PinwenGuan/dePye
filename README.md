@@ -12,16 +12,17 @@ The EOS fitting is dependent on pymatgen, which should be installed first.<br>
 
 Since you have finished the energy calculations, you should already have the structure file in your working folder (if not you need to do so). Currently dePye supports the structure files of VASP and Quantum ESPRESSO (QE), i.e., POSCAR and the .in file.<br> 
 Normally, the only input file you need to prepare is e-v.dat (can be a name ended with .dat) such as:<br>
-\# V(angstrom^3) E(eV) vol_0.98 vol_0.99 vol_1.00 vol_1.01 vol_1.02
+\# V(angstrom^3) E(eV) vol_0.98 vol_0.99 vol_1.00 vol_1.01 vol_1.02<br>
 
-69.131955   -7728.27656469   -7728.27686878   …
-71.217852   -7728.28518104   -7728.29116264   …
-73.345300   -7728.25348998   -7728.25450442   …
-75.514684   -7728.18594466   -7728.17339096   …
-77.726434   -7728.08681822   -7728.05316957   …
+69.131955   -7728.27656469   -7728.27686878   …<br>
+71.217852   -7728.28518104   -7728.29116264   …<br>
+73.345300   -7728.25348998   -7728.25450442   …<br>
+75.514684   -7728.18594466   -7728.17339096   …<br>
+77.726434   -7728.08681822   -7728.05316957   …<br>
 
 The comment lines do not matter. The first column is the volume (in angstrom^3), and the second, third, … is the energies (in eV). At least 5 V-E data points are needed. In the case of multiple sets of energies, each energy set will generate a result. For example, one can get two E-V datasets with and without relaxation, and get two sets of properties.<br>
 Note: the input data should be corresponded to the number of atoms in the structure file. 
+
 ## Run dePye
 
 First activate the virtual environment where pymatgen is installed:<br>
@@ -53,13 +54,13 @@ You can append experimental data (or data you get by other methods, e.g., phonon
 depye POSCAR data.expt<br>
 Note: the default name of the experimental file is expt. If you want to use another name, the file should end with .expt.<br> 
 Note: for VASP, the structure file should be named “POSCAR”. For QE, it should be ended with “.in”. The expt file should look like:<br>
-\# T (K) G (kJ/mol-atom) V (cm^3/mol-atom) B (GPa) S (J/mol-atom/K) H (kJ/mol-atom) TEC (1e-6/K) Cp (J/mol-atom/K) Cv (J/mol-atom/K)
-T B
-298 100
-500  90
+\# T (K) G (kJ/mol-atom) V (cm^3/mol-atom) B (GPa) S (J/mol-atom/K) H (kJ/mol-atom) TEC (1e-6/K) Cp (J/mol-atom/K) Cv (J/mol-atom/K)<br>
+T B<br>
+298 100<br>
+500  90<br>
 
-T TEC
-298 40
+T TEC<br>
+298 40<br>
 
 ## Get the results
 
