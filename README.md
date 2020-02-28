@@ -93,6 +93,17 @@ T TEC ref
 
 After dePye running, a series of figures about EOS and thermodynamic properties will be prompted out.  The output file “Debye-thermo” contains the EOS parameters and the data of Gibbs energy, volume, bulk modulus, entropy, enthalpy, thermal expansion and heat capacity as functions of temperature, which can be further as inputs for thermodynamic modelling.<br> 
 
+## Uncertainty quantification of thermodynamic properties
+
+The script gpaw/relax-n.py demonstrate using BEEF (Bayesian error estimation functional) to calculate an ensemble of E-V data by the code GPAW. Supposing you generate 2000 e-v.dat files from this calculations, i.e., e-v1.dat, e-v2.dat, ..., e-v2000.dat, then you can using a bash script like the following to obtain an ensemble of thermodynamic properties:<br>
+```
+for i in $(seq 1 2000)
+do
+python -c "from post import eos_gpaw;eos_gpaw(ev='e-v`echo $i`.dat',struc='POSCAR')"
+done
+```
+In this way, an estimation of uncertainty of thermodynamic properties caused by DFT functionals can be attained. There are also functions in the post module for generating probability distribution function of thermodynamic properties, calculating histograms of thermodynamic properties at certain temperature and their statistics and plotting results. 
+
 ## Reference
 
 Please cite the reference below if you use dePye in your work:<br>
