@@ -5,8 +5,8 @@ A python code for EOS fitting and calculations of thermodynamics properties base
 
 Suppose you download the files and put them in the folder \~/bin. Then add the related paths by adding in your .bashrc:<br>
 ```
-export PATH=\~/bin/depye:$PATH<br>
-export PYTHONPATH=\~/bin/depye:$PYTHONPATH<br>
+export PATH=\~/bin/depye:$PATH
+export PYTHONPATH=\~/bin/depye:$PYTHONPATH
 ```
 The EOS fitting is dependent on pymatgen, which should be installed first.<br>
 
@@ -30,7 +30,9 @@ Note: the input data should be corresponded to the number of atoms in the struct
 First activate the virtual environment where pymatgen is installed:<br>
 source activate (pymatgen environment)<br>
 In your working folder, type:<br>
-depye -tmax=1000 –tstep=10 POSCAR<br>
+```
+depye -tmax=1000 –tstep=10 POSCAR
+```
 Here,  tmax means the maximum temperature you want to calculate, tstep is the temperature step in unit of 10 K in the output file, and POSCAR is the structure file. If not specified, the default setting will be used, i.e., tmax=1000, tstep=1 and POSCAR. The order of these flags does not matter. Another example:<br>
 depye -tmax=1000 cu.in<br>
 where the default tstep=1 (10 K) and the QE input file cu.in will be used.<br>
