@@ -50,6 +50,20 @@ You can adjust the scaling factor in the Debye temperature (default is 0.617):<b
 depye POSCAR s=0.8
 ```
 You can put a 'poisson' file which only contains the value of the poisson ratio of the material, then the code will calculate the scaling factor from it and override the default or the assigned s.<br>
+You can select EOS, e.g.:<br>
+```
+depye POSCAR eos='birch_murnaghan'
+```
+The available EOS options are:<br>
+```
+        "vinet": Vinet,
+        "murnaghan": Murnaghan,
+        "birch": Birch,
+        "birch_murnaghan": BirchMurnaghan,
+        "pourier_tarantola": PourierTarantola,
+        "deltafactor": DeltaFactor,
+        "numerical_eos": NumericalEOS
+```
 You can turn off showing figures by adding show='F':<br>
 ```
 depye POSCAR show='F'
