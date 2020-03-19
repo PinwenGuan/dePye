@@ -15,7 +15,7 @@ The EOS fitting is dependent on pymatgen, which should be installed first.<br>
 Since you have finished the energy calculations, you should already have the structure file in your working folder (if not you need to do so). Currently dePye supports the structure files of VASP and Quantum ESPRESSO (QE), i.e., POSCAR and the .in file.<br> 
 Normally, the only input file you need to prepare is e-v.dat (can be a name ended with .dat) such as:<br>
 ```
-# V(angstrom^3) E(eV) vol_0.98 vol_0.99 vol_1.00 vol_1.01 vol_1.02<br>
+# V(angstrom^3) E(eV) vol_0.98 vol_0.99 vol_1.00 vol_1.01 vol_1.02
 
 69.131955   -7728.27656469   -7728.27686878   …
 71.217852   -7728.28518104   -7728.29116264   …
