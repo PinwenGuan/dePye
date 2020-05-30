@@ -123,3 +123,16 @@ In this way, an estimation of uncertainty of thermodynamic properties caused by 
 Please cite the reference below if you use dePye in your work:<br>
 
 Pin-Wen Guan, Gregory Houchins, Venkatasubramanian Viswanathan. Uncertainty quantification of DFT-predicted finite temperature thermodynamic properties within the Debye model. The Journal of Chemical Physics, 2019, 151(24): 244702.<br>
+
+```
+@article{guan2019uncertainty,
+  title={Uncertainty quantification of DFT-predicted finite temperature thermodynamic properties within the Debye model},
+  author={Guan, Pin-Wen and Houchins, Gregory and Viswanathan, Venkatasubramanian},
+  journal={The Journal of Chemical Physics},
+  volume={151},
+  number={24},
+  pages={244702},
+  year={2019},
+  publisher={AIP Publishing LLC}
+}
+```
