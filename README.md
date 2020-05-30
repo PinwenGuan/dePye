@@ -118,6 +118,9 @@ done
 ```
 In this way, an estimation of uncertainty of thermodynamic properties caused by DFT functionals can be attained. There are also functions in the post module for generating probability distribution function of thermodynamic properties, calculating histograms of thermodynamic properties at certain temperature and their statistics and plotting results. 
 
+## Author
+This software was primarily written by Pin-Wen Guan who was advised by Prof. Venkat Viswanathan.
+
 ## Reference
 
 Please cite the reference below if you use dePye in your work:<br>
